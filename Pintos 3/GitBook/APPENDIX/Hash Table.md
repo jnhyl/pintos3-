@@ -46,7 +46,8 @@ typedef unsigned hash_hash_func (const struct hash_elem *e, void *aux);
 unsigned hash_bytes (const void *buf, size t *size)
 ```
 
-`buf`에서 시작하는 `size` 바이트에 대한 해시 값을 반환합니다. 구현은 32비트 워드를 위한 범용 Fowler–Noll–Vo 해시([http://en.wikipedia.org/wiki/Fowler_Noll_Vo_hash)입니다](http://en.wikipedia.org/wiki/Fowler_Noll_Vo_hash\)%EC%9E%85%EB%8B%88%EB%8B%A4).
+`buf`에서 시작하는 `size` 바이트에 대한 해시 값을 반환합니다. 구현은 32비트 워드를 위한 범용 Fowler–Noll–Vo 해시입니다.
+[http://en.wikipedia.org/wiki/Fowler_Noll_Vo_hash](http://en.wikipedia.org/wiki/Fowler_Noll_Vo_hash)
 
 ```
 unsigned hash_string (const char *s)
